@@ -10,6 +10,7 @@
   --ifm-color-primary-dark: #770808;
   --ifm-color-primary-darker: #720808;
   --ifm-color-primary-darkest: #580606;
+  --ifm-footer-background-color: #db8f8f;
   --ifm-color-primary-light: #bd1818;
   --ifm-color-primary-lighter: #cc3434;
   --ifm-color-primary-lightest: #dd4848;
@@ -20,6 +21,7 @@
 /* For readability concerns, you should choose a lighter palette in dark mode. */
 [data-theme='dark'] {
   --ifm-color-primary: #9b0909;
+  --ifm-footer-background-color: #463030;
   --ifm-color-primary-dark: #770808;
   --ifm-color-primary-darker: #720808;
   --ifm-color-primary-darkest: #580606;

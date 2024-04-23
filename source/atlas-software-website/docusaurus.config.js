@@ -90,7 +90,6 @@ const config = {
         ],
       },
       footer: {
-        style: 'dark',
         links: [
           {
             title: 'Docs',
@@ -140,8 +139,8 @@ const config = {
         respectPrefersColorScheme: false,
       },
       prism: {
-        theme: prismThemes.duotoneLight,
-        darkTheme: prismThemes.duotoneDark,
+        theme: prismThemes.github,
+        darkTheme: prismThemes.dracula,
       },
     }),
 };

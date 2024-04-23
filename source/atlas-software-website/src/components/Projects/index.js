@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Rpg Manager',
-    image: require('@site/static/img/docusaurus.png').default,
+    image: require('@site/static/img/rpg-manager-card.png').default,
     description: (
       <>
         Docusaurus was designed from the ground up to be easily installed and
