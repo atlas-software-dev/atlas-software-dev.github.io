@@ -8,18 +8,25 @@ const FeatureList = [
     image: require('@site/static/img/rpg-manager-card.png').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Crie, gerencie e jogue a sua campanha de RPG com seus amigos de forma interativa no celular.
+      </>
+    ),
+  },
+  {
+    title: 'Android Atlas',
+    image: require('@site/static/img/android-atlas-card.png').default,
+    description: (
+      <>
+        Módulo android open-source para acelerar o desenvolvimento de aplicações android profissionais.
       </>
     ),
   },
   {
     title: 'Urano',
-    image: require('@site/static/img/docusaurus.png').default,
+    image: require('@site/static/img/urano-card.png').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Plataforma de ensino evolutivo e inovativo para aprender tudo de forma rapida e inteligente.
       </>
     ),
   },

@@ -4,7 +4,7 @@
  */
 
 .heroBanner {
-  padding: 10rem 0;
+  padding: 5rem 0;
   background: linear-gradient(135.8deg, rgb(26, 26, 29) 27.1%, rgb(111, 34, 50) 77.5%);;
   text-align: center;
   position: relative;
@@ -15,6 +15,11 @@
   .heroBanner {
     padding: 2rem;
   }
+}
+
+.logoImg {
+  width: 30em;
+  height: 30em;
 }
 
 .buttons {
