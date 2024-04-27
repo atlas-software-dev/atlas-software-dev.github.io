@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkatlas_software_website=self.webpackChunkatlas_software_website||[]).push([[775],{52:a=>{a.exports=JSON.parse('{"label":"hola","permalink":"/en/blog/tags/hola","allTagsPath":"/en/blog/tags","count":1,"unlisted":false}')}}]);
