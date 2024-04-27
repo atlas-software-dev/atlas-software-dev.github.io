@@ -73,7 +73,7 @@ const config = {
           src: 'img/atlas-logo-menu.png',
         },
         items: [
-          //{to: '/rpg-manager', label: 'RPG Manager', position: 'left'},
+          {to: '/rpg-manager', label: 'RPG Manager', position: 'left'},
           // {
           //   type: 'docSidebar',
           //   sidebarId: 'tutorialSidebar',
