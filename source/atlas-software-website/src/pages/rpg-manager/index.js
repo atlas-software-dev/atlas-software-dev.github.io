@@ -8,6 +8,8 @@ import Heading from '@theme/Heading';
 import styles from './index.module.css';
 import Projects from '../../components/Projects';
 import Systems from '../../components/RpgSystems';
+import RpgManagerMainFeatures from '../../components/RpgManagerMainFeatures';
+
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -22,9 +24,20 @@ function HomepageHeader() {
           <div className={clsx('col col--8')}>
             <img className={styles.logoImg} src={require('@site/static/img/logo.png').default} />
             <h1>Revolucione o seu roleplay</h1>
-            <h3>O RPG Manager oferecerá recursos para montar sua mesa de RPG em qualquer lugar</h3>
-              <button class="button button--lg button--primary">APOIAR</button>
-              <button class="button button--lg button--outline button--success">BAIXAR</button>
+            <h4>
+              Descubra o Atlas RPG Manager: seu companheiro completo para organizar campanhas de RPG. 
+              Crie histórias envolventes, crie personagens e convide seus amigos para as sessoes.
+            </h4>
+            <div className="card">
+            <div className="card__body">
+              <button class="button button--lg button--primary">Apoiar</button>
+              </div>
+            </div>
+            <div className="card">
+              <div className="card__body">
+              <button class="button button--lg button--primary">Baixar</button>
+              </div>
+            </div>
           </div>
           <div className={clsx('col col--4')}>
               <img className={styles.cellBannerImg} src={require('@site/static/img/cell-banner.png').default} />
@@ -44,6 +57,7 @@ export default function Home() {
       description="Description will go into a meta tag in <head />">
       <HomepageHeader />
       <main>
+        <RpgManagerMainFeatures />
         <Systems />
       </main>
     </Layout>

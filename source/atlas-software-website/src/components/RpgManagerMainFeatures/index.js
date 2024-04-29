@@ -4,42 +4,45 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
-    Svg: require('@site/static/img/logo.png').default,
+    title: 'Criação de Personagens',
+    image: require('@site/static/img/logo.png').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Crie, edite e gerencie a ficha do seu personagem, adicione imagens, habilidades, 
+        compartilhe com seus amigos, defina a historia do seu personagem e defina as 
+        ligacoes dele na história.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
-    Svg: require('@site/static/img/logo.png').default,
+    title: 'Gerenciamento de Campanha',
+    image: require('@site/static/img/logo.png').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Escreva e detalhe suas campanhas com facilidade, convidando amigos para se juntarem à diversão. 
+        Defina arcos narrativos, planeje sessões emocionantes e estabeleça tanto os aspectos públicos 
+        quanto os internos da história.
       </>
     ),
   },
   {
-    title: 'Powered by React',
-    Svg: require('@site/static/img/logo.png').default,
+    title: 'Gerenciamento de Sessão',
+    image: require('@site/static/img/logo.png').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Agende sessões com notificações para manter todos os jogadores informados. Prepare cenários envolventes, 
+        inicie batalhas emocionantes e monitore o status de cada personagem durante a sessão para uma experiência 
+        de jogo imersiva.
       </>
     ),
   },
 ];
 
-function Feature({Svg, title, description}) {
+function Feature({image, title, description}) {
   return (
     <div className={clsx('col col--4')}>
       <div className="text--center">
-        <Svg className={styles.featureSvg} role="img" />
+        <img src={image} />
       </div>
       <div className="text--center padding-horiz--md">
         <Heading as="h3">{title}</Heading>
@@ -49,7 +52,7 @@ function Feature({Svg, title, description}) {
   );
 }
 
-export default function HomepageFeatures() {
+export default function RpgManagerMainFeatures() {
   return (
     <section className={styles.features}>
       <div className="container">
