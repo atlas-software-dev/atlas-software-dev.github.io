@@ -1,14 +1,12 @@
 import clsx from 'clsx';
-import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
 
-import Heading from '@theme/Heading';
 import styles from './index.module.css';
-import Projects from '../../components/Projects';
 import Systems from '../../components/RpgSystems';
 import RpgManagerMainFeatures from '../../components/RpgManagerMainFeatures';
+import RpgManagerFeatures from '../../components/RpgManagerFeatures';
+
 
 
 function HomepageHeader() {
@@ -53,12 +51,13 @@ export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout
-      title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      title="Atlas RPG Manager"
+      description="Revolucione o seu roleplay com o gerenciador de campanhas RPG do Atlas">
       <HomepageHeader />
       <main>
         <RpgManagerMainFeatures />
         <Systems />
+        <RpgManagerFeatures />
       </main>
     </Layout>
   );

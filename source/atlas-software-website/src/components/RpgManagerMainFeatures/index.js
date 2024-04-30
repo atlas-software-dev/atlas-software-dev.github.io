@@ -5,7 +5,7 @@ import styles from './styles.module.css';
 const FeatureList = [
   {
     title: 'Criação de Personagens',
-    image: require('@site/static/img/logo.png').default,
+    image: require('@site/static/img/personagens.png').default,
     description: (
       <>
         Crie, edite e gerencie a ficha do seu personagem, adicione imagens, habilidades, 
@@ -16,7 +16,7 @@ const FeatureList = [
   },
   {
     title: 'Gerenciamento de Campanha',
-    image: require('@site/static/img/logo.png').default,
+    image: require('@site/static/img/campanha.png').default,
     description: (
       <>
         Escreva e detalhe suas campanhas com facilidade, convidando amigos para se juntarem à diversão. 
@@ -27,7 +27,7 @@ const FeatureList = [
   },
   {
     title: 'Gerenciamento de Sessão',
-    image: require('@site/static/img/logo.png').default,
+    image: require('@site/static/img/sessao.png').default,
     description: (
       <>
         Agende sessões com notificações para manter todos os jogadores informados. Prepare cenários envolventes, 
@@ -35,7 +35,7 @@ const FeatureList = [
         de jogo imersiva.
       </>
     ),
-  },
+  }
 ];
 
 function Feature({image, title, description}) {
@@ -56,6 +56,7 @@ export default function RpgManagerMainFeatures() {
   return (
     <section className={styles.features}>
       <div className="container">
+        <Heading as="h3">Funcionalidades</Heading>
         <div className="row">
           {FeatureList.map((props, idx) => (
             <Feature key={idx} {...props} />
