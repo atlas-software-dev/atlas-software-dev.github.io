@@ -4,42 +4,47 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Easy to Use',
+    title: 'Crie e Compartilhe Suas Aventuras Épicas',
     image: require('@site/static/img/logo.png').default,
     description: (
       <>
-        Docusaurus was designed from the ground up to be easily installed and
-        used to get your website up and running quickly.
+        Com nosso aplicativo, você pode criar e gerenciar personagens incríveis, 
+        desde seus detalhes até suas habilidades e imagens. Compartilhe seus personagens 
+        com amigos e na web, criando perfis únicos e definindo suas histórias e conexões 
+        no universo do jogo.
       </>
     ),
   },
   {
-    title: 'Focus on What Matters',
+    title: 'Domine suas Campanhas',
     image: require('@site/static/img/logo.png').default,
     description: (
       <>
-        Docusaurus lets you focus on your docs, and we&apos;ll do the chores. Go
-        ahead and move your docs into the <code>docs</code> directory.
+        Escreva e detalhe suas campanhas com facilidade, convidando amigos para se juntarem à diversão. 
+        Defina arcos narrativos, planeje sessões emocionantes e estabeleça tanto os aspectos públicos quanto os 
+        internos da história.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Controle Total da Sessão',
     image: require('@site/static/img/logo.png').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Agende sessões com notificações para manter todos os jogadores informados. Prepare cenários envolventes, 
+        inicie batalhas emocionantes e monitore o status de cada personagem durante a sessão para uma experiência 
+        de jogo imersiva.
       </>
     ),
   },
   {
-    title: 'Powered by React',
+    title: 'Personalize Seu Equipamento',
     image: require('@site/static/img/logo.png').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Crie e gerencie itens, armas e consumíveis para enriquecer sua aventura. Importe itens da nossa extensa 
+        galeria ou crie seus próprios equipamentos personalizados para uma experiência de jogo verdadeiramente única.
+
       </>
     ),
   },

@@ -7,7 +7,14 @@ import Systems from '../../components/RpgSystems';
 import RpgManagerMainFeatures from '../../components/RpgManagerMainFeatures';
 import RpgManagerFeatures from '../../components/RpgManagerFeatures';
 
-
+function LaunchPlan() {
+  const {siteConfig} = useDocusaurusContext();
+  return (
+<header className={clsx('hero hero--primary', styles.heroBanner)}>
+<img src={require('@site/static/img/cronograma.png').default} />
+</header>
+  );
+}
 
 function HomepageHeader() {
   const {siteConfig} = useDocusaurusContext();
@@ -57,6 +64,7 @@ export default function Home() {
       <main>
         <RpgManagerMainFeatures />
         <Systems />
+        <LaunchPlan/>
         <RpgManagerFeatures />
       </main>
     </Layout>
