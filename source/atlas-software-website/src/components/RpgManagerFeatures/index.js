@@ -4,8 +4,8 @@ import styles from './styles.module.css';
 
 const FeatureList = [
   {
-    title: 'Crie e Compartilhe Suas Aventuras Épicas',
-    image: require('@site/static/img/logo.png').default,
+    title: 'Crie seu personagem e compartilhe',
+    Svg: require('@site/static/img/char.svg').default,
     description: (
       <>
         Com nosso aplicativo, você pode criar e gerenciar personagens incríveis, 
@@ -17,7 +17,7 @@ const FeatureList = [
   },
   {
     title: 'Domine suas Campanhas',
-    image: require('@site/static/img/logo.png').default,
+    Svg: require('@site/static/img/book.svg').default,
     description: (
       <>
         Escreva e detalhe suas campanhas com facilidade, convidando amigos para se juntarem à diversão. 
@@ -28,7 +28,7 @@ const FeatureList = [
   },
   {
     title: 'Controle Total da Sessão',
-    image: require('@site/static/img/logo.png').default,
+    Svg: require('@site/static/img/adventure.svg').default,
     description: (
       <>
         Agende sessões com notificações para manter todos os jogadores informados. Prepare cenários envolventes, 
@@ -39,7 +39,7 @@ const FeatureList = [
   },
   {
     title: 'Personalize Seu Equipamento',
-    image: require('@site/static/img/logo.png').default,
+    Svg: require('@site/static/img/armor.svg').default,
     description: (
       <>
         Crie e gerencie itens, armas e consumíveis para enriquecer sua aventura. Importe itens da nossa extensa 
@@ -49,8 +49,8 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Powered by React',
-    image: require('@site/static/img/logo.png').default,
+    title: 'Defina e organize cenários',
+    Svg: require('@site/static/img/castle.svg').default,
     description: (
       <>
         Extend or customize your website layout by reusing React. Docusaurus can
@@ -59,8 +59,8 @@ const FeatureList = [
     ),
   },
   {
-    title: 'Powered by React',
-    image: require('@site/static/img/logo.png').default,
+    title: 'Escreva livros e documentos',
+    Svg: require('@site/static/img/paper.svg').default,
     description: (
       <>
         Extend or customize your website layout by reusing React. Docusaurus can
@@ -70,13 +70,13 @@ const FeatureList = [
   },
 ];
 
-function Feature({image, title, description}) {
+function Feature({Svg, title, description}) {
   return (
     <div className="col col--6">
       <div className="row">
     <div className={clsx('col col--2')}>
       <div className="text--center">
-        <img src={image} />
+      <Svg className={styles.featureSvg} role="img" />
       </div>
     </div>
     <div className={clsx('col col--10')}>

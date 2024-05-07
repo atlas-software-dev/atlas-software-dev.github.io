@@ -5,7 +5,13 @@
   width: 100%;
 }
 
-.featureSvg {
-  height: 200px;
-  width: 200px;
+.imgFeatures {
+  width: 20rem;
+}
+
+@media screen and (max-width: 996px) {
+  
+.imgFeatures {
+  width: 15rem;
+}
 }

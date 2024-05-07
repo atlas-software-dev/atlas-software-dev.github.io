@@ -49,8 +49,25 @@
 }
 
 .cellBannerImg {
-  width: 40em;
+  width: 30rem;
   margin-bottom: -20em;
+}
+
+.headerCol {
+  margin-bottom: 5rem;
+}
+
+.cronogramaBanner {
+  background: linear-gradient(135.8deg, rgba(9, 9, 10, 0.808) 27.1%, rgba(61, 11, 22, 0.76) 77.5%);;
+  padding: 2em 0;
+  text-align: center;
+  position: relative;
+  overflow: hidden;
+}
+
+.cronogramaImg {
+  text-align: center;
+  width: 60rem;
 }
 
 .buttons {
