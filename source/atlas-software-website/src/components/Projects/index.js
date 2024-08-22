@@ -1,11 +1,13 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
+import Link from '@docusaurus/Link';
 
 const FeatureList = [
   {
     title: 'Rpg Manager',
     image: require('@site/static/img/rpg-manager-card.png').default,
+    link: '/rpg-manager',
     description: (
       <>
         Crie, gerencie e jogue a sua campanha de RPG com seus amigos de forma interativa no celular.
@@ -15,6 +17,7 @@ const FeatureList = [
   {
     title: 'Android Atlas',
     image: require('@site/static/img/android-atlas-card.png').default,
+    Link: '',
     description: (
       <>
         Módulo android open-source para acelerar o desenvolvimento de aplicações android profissionais.
@@ -23,6 +26,7 @@ const FeatureList = [
   },
   {
     title: 'Urano',
+    Link: '',
     image: require('@site/static/img/urano-card.png').default,
     description: (
       <>
@@ -32,7 +36,18 @@ const FeatureList = [
   },
 ];
 
-function Project({image, title, description}) {
+function Button(link) {
+  if (link.lenght == 0) {
+    return (<button class="button button--primary button--block disabled">em breve</button>)
+  } else {
+    return (
+    <Link to={link}>
+      <button class="button button--primary button--block">Saber mais</button>
+    </Link>
+    );
+  }
+}
+function Project({image, title, description, link}) {
   return (
     <div className={clsx('card')}>
       <div className="card__image">
@@ -43,7 +58,7 @@ function Project({image, title, description}) {
         <p>{description}</p>
       </div>
       <div className="card__footer">
-        <button class="button button--primary button--block disabled">em breve</button>
+        <Button link={link} />
       </div>
     </div>
   );

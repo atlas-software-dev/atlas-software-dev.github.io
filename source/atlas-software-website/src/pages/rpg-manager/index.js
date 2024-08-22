@@ -2,7 +2,9 @@ import clsx from 'clsx';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
 
+
 import styles from './index.module.css';
+import Link from '@docusaurus/Link';
 import Systems from '../../components/RpgSystems';
 import RpgManagerMainFeatures from '../../components/RpgManagerMainFeatures';
 import RpgManagerFeatures from '../../components/RpgManagerFeatures';
@@ -51,7 +53,9 @@ function HomepageHeader() {
                 </>
               </div>
               <div className="card__footer">
-                <button className="button button--lg button--primary button--block">Apoiar o projeto</button>
+              <Link to="https://www.catarse.me/atlas_rpg_manager">
+                <button  className="button button--lg button--primary button--block">Apoiar o projeto</button>
+              </Link>
               </div>
             </div>
           </div>
