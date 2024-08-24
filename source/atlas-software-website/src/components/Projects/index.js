@@ -6,7 +6,7 @@ const FeatureList = [
   {
     title: 'Rpg Manager',
     image: require('@site/static/img/rpg-manager-card.png').default,
-    link: '/rpg-manager',
+    button: (<button onClick={() => location.href = "/rpg-manager" } className="button button--primary button--block">Saber mais</button>),
     description: (
       <>
         Crie, gerencie e jogue a sua campanha de RPG com seus amigos de forma interativa no celular.
@@ -16,7 +16,7 @@ const FeatureList = [
   {
     title: 'Android Atlas',
     image: require('@site/static/img/android-atlas-card.png').default,
-    Link: '',
+    button: (<button className="button button--primary button--block disabled">em breve</button>),
     description: (
       <>
         Módulo android open-source para acelerar o desenvolvimento de aplicações android profissionais.
@@ -25,7 +25,7 @@ const FeatureList = [
   },
   {
     title: 'Urano',
-    Link: '',
+    button: (<button className="button button--primary button--block disabled">em breve</button>),
     image: require('@site/static/img/urano-card.png').default,
     description: (
       <>
@@ -35,16 +35,7 @@ const FeatureList = [
   },
 ];
 
-function Button(link) {
-  if (link.lenght == 0) {
-    return (<button class="button button--primary button--block disabled">em breve</button>);
-  } else {
-    return (
-      <button onPress={() => window.location.href = {link} } class="button button--primary button--block">Saber mais</button>
-    );
-  }
-}
-function Project({image, title, description, link}) {
+function Project({image, title, description, button}) {
   return (
     <div className={clsx('card')}>
       <div className="card__image">
@@ -55,7 +46,7 @@ function Project({image, title, description, link}) {
         <p>{description}</p>
       </div>
       <div className="card__footer">
-        <Button link={link} />
+          {button}
       </div>
     </div>
   );
