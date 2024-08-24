@@ -1,7 +1,6 @@
 import clsx from 'clsx';
 import Heading from '@theme/Heading';
 import styles from './styles.module.css';
-import Link from '@docusaurus/Link';
 
 const FeatureList = [
   {
@@ -38,12 +37,10 @@ const FeatureList = [
 
 function Button(link) {
   if (link.lenght == 0) {
-    return (<button class="button button--primary button--block disabled">em breve</button>)
+    return (<button class="button button--primary button--block disabled">em breve</button>);
   } else {
     return (
-    <Link to={link}>
-      <button class="button button--primary button--block">Saber mais</button>
-    </Link>
+      <button onPress={() => window.location.href = {link} } class="button button--primary button--block">Saber mais</button>
     );
   }
 }

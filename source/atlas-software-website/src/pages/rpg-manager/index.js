@@ -8,6 +8,10 @@ import Link from '@docusaurus/Link';
 import Systems from '../../components/RpgSystems';
 import RpgManagerMainFeatures from '../../components/RpgManagerMainFeatures';
 import RpgManagerFeatures from '../../components/RpgManagerFeatures';
+import Card from '../../components/Card';
+import CardImage from '../../components/Card/CardImage';
+import CardBody from '../../components/Card/CardBody';
+import CardFooter from '../../components/Card/CardFooter';
 
 function LaunchPlan() {
   const {siteConfig} = useDocusaurusContext();
@@ -27,7 +31,7 @@ function HomepageHeader() {
     <header className={clsx('hero hero--dark', styles.heroBanner)}>
       
       <div className={styles.bannerImgBack}>
-        <img src={require('@site/static/img/rpg-manager-head-back.jpg').default} />
+        <img src={require('@site/static/img/banner-2.jpg').default} />
       </div>
       <div className='container'>
         <div className="row">
@@ -42,22 +46,23 @@ function HomepageHeader() {
         </div>
         <div className={clsx('row')}>
           <div className={clsx('col col--5 col--offset-2')}>
-            <div className="card">
-              <div className="card__image">
-                <img src={require('@site/static/img/logo-catarse-wt.png').default} />
+          <Card style={{ background: '#1b1b1d', color:'white'}}>
+            <CardImage
+              cardImageUrl={require('@site/static/img/logo-catarse-wt.png').default}
+            />
+            <CardBody >
+              <h4>Apoie no catarse</h4>
+              <>
+                O projeto é independente e possui pagina para apoio na plataforma Catarse.
+              </>
+            </CardBody>
+            <CardFooter  className='text--center'> 
+              <div className='button-group button-group--block'>
+                {/* <button className='button button--success' disabled >Baixar</button> */}
+                <button onClick={ () => window.open("https://www.catarse.me/atlas_rpg_manager") } className='button button--danger'>Apoiar</button>
               </div>
-              <div className="card__body">
-                <h4>Apoie no catarse</h4>
-                <>
-                  O projeto é independente e possui pagina para apoio na plataforma Catarse.
-                </>
-              </div>
-              <div className="card__footer">
-              <Link to="https://www.catarse.me/atlas_rpg_manager">
-                <button  className="button button--lg button--primary button--block">Apoiar o projeto</button>
-              </Link>
-              </div>
-            </div>
+            </CardFooter> 
+          </Card>
           </div>
           <div className={clsx('col col--5')}>
               <img className={styles.cellBannerImg} src={require('@site/static/img/cell-banner.png').default} />
