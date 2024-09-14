@@ -31,7 +31,7 @@ function HomepageHeader() {
     <header className={clsx('hero hero--dark', styles.heroBanner)}>
       
       <div className={styles.bannerImgBack}>
-        <img src={require('@site/static/img/banner-2.jpg').default} />
+        {/* <img src={require('@site/static/img/banner-1.jpg').default} /> */}
       </div>
       <div className='container'>
         <div className="row">

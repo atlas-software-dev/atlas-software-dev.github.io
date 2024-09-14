@@ -53,8 +53,7 @@ const FeatureList = [
     Svg: require('@site/static/img/castle.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Crie e gerencie cenarios de roleplay ou batalha para serem usados durante as sessões.
       </>
     ),
   },
@@ -63,8 +62,7 @@ const FeatureList = [
     Svg: require('@site/static/img/paper.svg').default,
     description: (
       <>
-        Extend or customize your website layout by reusing React. Docusaurus can
-        be extended while reusing the same header and footer.
+        Crie documentos personalizados e escreva livros para enriquecer a campanha.
       </>
     ),
   },

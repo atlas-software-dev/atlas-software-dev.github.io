@@ -101,7 +101,7 @@ const config = {
           //   ],
           // },
           {
-            title: 'Community',
+            title: 'Redes sociais',
             items: [
               // {
               //   label: 'Stack Overflow',
@@ -118,7 +118,7 @@ const config = {
             ],
           },
           {
-            title: 'More',
+            title: 'Mais',
             items: [
               // {
               //   label: 'Blog',
