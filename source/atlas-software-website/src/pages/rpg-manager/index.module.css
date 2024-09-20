@@ -5,7 +5,7 @@
 
 .heroBanner {
 
-  background: linear-gradient(135.8deg, rgba(9, 9, 10, 0.521) 27.1%, rgba(53, 10, 19, 0.548) 77.5%);;
+  background: linear-gradient(135.8deg, rgba(9, 9, 10, 0.312) 27.1%, rgba(53, 10, 19, 0.326) 77.5%);
   padding: 2em 0;
   text-align: center;
   position: relative;
@@ -13,13 +13,20 @@
 }
 
 @media screen and (max-width: 996px) {
+
   .heroBanner {
+    background: linear-gradient(135.8deg, rgba(9, 9, 10, 0.921) 27.1%, rgba(53, 10, 19, 0.948) 77.5%);
     text-align: center;
     padding: 0;
   }
 
+  .bannerImgBack {
+    display: none;
+  }
+
   .bannerImgBack img {
     height: 100%;
+    width: 100%;
   }
   
   .logoImg {
@@ -28,7 +35,8 @@
 
   .cellBannerImg {
     width: 20em;
-    margin-bottom: -20em;
+    margin-top: 1em;
+    margin-bottom: -10em;
   }
 }
 
@@ -36,29 +44,30 @@
   z-index: -1;
   position: absolute;
   overflow: hidden;
-  height: fit-content;
-  width: auto;
+  width: fit-content;
+  height: auto;
 }
 
 .bannerImgBack img {
+  height: 100%;
   width: 100%;
 }
 
 .logoImg {
-  width: 10em;
+  width: 15em;
 }
 
 .cellBannerImg {
-  width: 30rem;
+  width: fit-content;
   margin-bottom: -20em;
 }
 
 .headerCol {
-  margin-bottom: 5rem;
+  margin-bottom: 1rem;
 }
 
 .cronogramaBanner {
-  background: linear-gradient(135.8deg, rgba(9, 9, 10, 0.808) 27.1%, rgba(61, 11, 22, 0.76) 77.5%);;
+  background: linear-gradient(135.8deg, rgba(9, 9, 10, 0.908) 27.1%, rgba(61, 11, 22, 0.96) 77.5%);;
   padding: 2em 0;
   text-align: center;
   position: relative;

@@ -64,7 +64,7 @@ const config = {
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
       // Replace with your project's social card
-      image: 'img/docusaurus-social-card.jpg',
+      image: 'img/social-card.png',
       navbar: {
         style: 'dark',
         title: 'Atlas Software',
@@ -74,6 +74,10 @@ const config = {
         },
         items: [
           {to: '/rpg-manager', label: 'RPG Manager', position: 'left'},
+          {label: 'Team', position: 'left', items: [
+            {href: 'http://albertklik.github.io', label: 'Paulo Figueiro'},
+            {to: '/team/locutorbubu', label: 'Locutorbubu'}
+          ]},
           // {
           //   type: 'docSidebar',
           //   sidebarId: 'tutorialSidebar',
@@ -101,19 +105,23 @@ const config = {
           //   ],
           // },
           {
-            title: 'Redes sociais',
+            title: 'Redes',
             items: [
               // {
               //   label: 'Stack Overflow',
               //   href: 'https://stackoverflow.com/questions/tagged/docusaurus',
               // },
-              // {
-              //   label: 'Discord',
-              //   href: 'https://discordapp.com/invite/docusaurus',
-              // },
+               {
+                 label: 'Discord',
+                 href: 'https://discord.gg/5aYKVh3vqQ',
+               },
               {
                 label: 'Twitter',
                 href: 'https://twitter.com/rpg_atlas',
+              },
+              {
+                label: 'Bluesky',
+                href: 'https://atlassoftware.bsky.social',
               },
             ],
           },

@@ -31,22 +31,29 @@ function HomepageHeader() {
     <header className={clsx('hero hero--dark', styles.heroBanner)}>
       
       <div className={styles.bannerImgBack}>
-        {/* <img src={require('@site/static/img/banner-1.jpg').default} /> */}
+         <img src={require('@site/static/img/banner-3.jpg').default} /> 
       </div>
       <div className='container'>
         <div className="row">
-          <div className={clsx('col col--8 col--offset-2', styles.headerCol)}>
-            <img className={styles.logoImg} src={require('@site/static/img/logo.png').default} />
-            <h1>Revolucione o seu roleplay</h1>
+          <div className={clsx('col', styles.headerCol)}>
+            <img className={styles.logoImg} src={require('@site/static/img/rpg-manager-logo.png').default} />
+            
+          </div>
+        </div>
+        <div className={clsx('row')}>
+          <div className={clsx('col col--5 col--offset-3 margin-top--lg margin-bottom--lg')}>
+          <h1>Revolucione o seu roleplay</h1>
             <>
               Descubra o Atlas RPG Manager: seu companheiro completo para organizar campanhas de RPG. 
               Crie histórias envolventes, crie personagens e convide seus amigos para as sessoes.
             </>
-          </div>
-        </div>
-        <div className={clsx('row')}>
-          <div className={clsx('col col--5 col--offset-2')}>
-          <Card style={{ background: '#1b1b1d', color:'white'}}>
+            <div className={clsx('row')}>
+              <div className='col col--12 margin-top--lg'>
+                {/* <button className='button button--success' disabled >Baixar</button> */}
+                <button onClick={ () => window.open("https://www.catarse.me/atlas_rpg_manager") } className='button button--block button--lg button--primary'>Apoiar</button>
+              </div>
+            </div>
+          {/* <Card style={{ background: '#1b1b1d', color:'white'}}>
             <CardImage
               cardImageUrl={require('@site/static/img/logo-catarse-wt.png').default}
             />
@@ -58,14 +65,14 @@ function HomepageHeader() {
             </CardBody>
             <CardFooter  className='text--center'> 
               <div className='button-group button-group--block'>
-                {/* <button className='button button--success' disabled >Baixar</button> */}
+                {/* <button className='button button--success' disabled >Baixar</button> 
                 <button onClick={ () => window.open("https://www.catarse.me/atlas_rpg_manager") } className='button button--danger'>Apoiar</button>
               </div>
             </CardFooter> 
-          </Card>
+          </Card> */}
           </div>
-          <div className={clsx('col col--5')}>
-              <img className={styles.cellBannerImg} src={require('@site/static/img/cell-banner.png').default} />
+          <div className={clsx('col col--4')}>
+              <img className={styles.cellBannerImg} src={require('@site/static/img/cell-banner2.png').default} />
           </div>
         </div>
       </div>

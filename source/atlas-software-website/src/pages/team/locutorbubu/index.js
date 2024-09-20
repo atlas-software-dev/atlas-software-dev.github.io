@@ -2,7 +2,6 @@ import clsx from 'clsx';
 import Link from '@docusaurus/Link';
 import useDocusaurusContext from '@docusaurus/useDocusaurusContext';
 import Layout from '@theme/Layout';
-import HomepageFeatures from '@site/src/components/HomepageFeatures';
 import Card from '../../../components/Card';
 import CardImage from '../../../components/Card/CardImage';
 import CardBody from '../../../components/Card/CardBody';
@@ -20,13 +19,13 @@ function HomepageHeader() {
          <Heading as="h1" className="hero__title">
           Locutorbubu
         </Heading>
-        <p className="hero__subtitle">comissions</p> 
+        <p className="hero__subtitle">Comissoes</p> 
         <div class="row" >
           <div class="col col--6 col--offset-3">
-          <Card >
+          <Card style={{ backgroundColor: '#2887bf' , color:'black'}} >
         <CardHeader
       className='padding-top--lg padding-bottom--lg'
-      style={{ backgroundColor: 'rgb(33 126 209)' , color:'black'}}
+      
     >
       <div className='avatar avatar--vertical'>
         <img
@@ -34,9 +33,9 @@ function HomepageHeader() {
           src={require('@site/static/img/bubu-avatar.jpg').default}
         />
         <div className='avatar__intro'>
-          <div className='avatar__name'>Locutor (@locutorbubu)</div>
+          <div className='avatar__name'>Emanoel Silva (@locutorbubu)</div>
           <small className='avatar__subtitle'>
-            Digital artist and concept art creator at 
+            Artista digital e criador de Concept Arts na 
             <a style={{ color:'white'}} href='https://atlassoftware.dev/'>Atlas Software</a>
           </small>
         </div>
@@ -54,11 +53,11 @@ function HomepageHeader() {
       Tokens de monstros de RPG, tokens de personagem do mais simples esboco ate artes mais complicadas completas, verifique minha tabela de valores e encomende agora sua arte.
     </CardBody>  
     <CardFooter
-      style={{ backgroundColor: '#2887bf' , color:'black'}}
+      
       className='text--center'
     >
       <div className='button-group button-group--block'>
-        <button className='button button--secondary'>Encomendar minha arte</button>
+        <button onClick={() => location.href = "https://locutorbubu.bsky.social" } className='button button--secondary'>Encomendar minha arte</button>
       </div>
     </CardFooter> 
           </Card>
@@ -70,14 +69,42 @@ function HomepageHeader() {
   );
 }
 
+function RpgMonsterTokens() {
+  const {siteConfig} = useDocusaurusContext();
+  return  (
+    <section>
+      <div className="container">
+      <div className="row">
+    <div className={clsx('col col--2')}>
+      <div className="text--center">
+      <img className={require('@site/static/img/char.svg').default} role="img" />
+      </div>
+    </div>
+    <div className={clsx('col col--10')}>
+    <div className="padding-horiz--md">
+        <Heading as="h3">RPG Monster Tokens</Heading>
+        <p>Description Text</p>
+      </div>
+    </div>
+    </div>
+        
+        <div className="row">
+          <div className='col'>Section 1</div>
+          <div className='col'>Section 2</div>
+          <div className='col'>Section 3</div>
+          <div className='col'>Section 3</div>
+        </div>
+      </div>
+    </section>
+  );
+} 
+
 export default function Home() {
   const {siteConfig} = useDocusaurusContext();
   return (
     <Layout>
       <HomepageHeader />
-      <main>
-        
-      </main>
+      <RpgMonsterTokens />
     </Layout>
   );
 }
