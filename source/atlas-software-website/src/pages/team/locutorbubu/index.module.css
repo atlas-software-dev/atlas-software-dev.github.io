@@ -6,7 +6,6 @@
 .heroBanner {
   padding: 5rem 0;
   background: linear-gradient(135.8deg, rgb(26, 26, 29) 27.1%, rgb(120, 19, 92) 77.5%);
-  text-align: center;
   position: relative;
   overflow: hidden;
 }
