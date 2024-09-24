@@ -16,23 +16,34 @@ function HomepageHeader() {
   return (
     <header className={clsx('hero hero--dark', styles.heroBanner)}>
       <div className="container" >
-        <div class="row" >
-          <div className='col col--2'>
+        <div className="row" >
+        <div className='col col--8'>
+          <div class="row margin-vert--lg" >
+          <div className='col col--3'>
             <div className='avatar'>
-              <img
-                className='avatar__photo avatar__photo--x2'
+              <img style={{width: 150, height: 150}}
+                className='avatar__photo avatar__photo--xl'
                 src={require('@site/static/img/bubu-avatar.jpg').default}
               />
             </div>
           </div>
-          <div className='col col--6'>
+          <div className='col col--9'>
             <Heading as="h1" className="hero__title">
               Locutorbubu
             </Heading>
-            <p className="hero__subtitle">Comissoes</p>
+            <p className="hero__subtitle">Artista digital, criador de monstros e amante de RPG</p>
+          </div>
+          <div className='col col--12'>
+          <div className='button-group button-group--block'>
+          <button class="button  button--outline button--secondary">Bluesky</button>
+          <button class="button  button--outline button--secondary">Instagram</button>
+          <button class="button  button--outline button--secondary">Email</button>
+          </div>
+          </div>
+          </div>
           </div>
           <div className='col col--4'>
-            <Card style={{ backgroundColor: '#2887bf', color: 'black' }} >
+            <Card style={{ backgroundColor: '#b113bf', color: 'black' }} >
 
               <CardImage style={{ padding: 0 }}
                 cardImageUrl={require('@site/static/img/char1.jpg').default}
@@ -65,10 +76,12 @@ function HomepageHeader() {
 function AboutMe() {
   const { siteConfig } = useDocusaurusContext();
   return (
-    <div className="hero hero--dark">
+    <div className="hero hero--secondary">
       <div className="container">
-        <h1 className="hero__title">Sobre mim</h1>
-        <p className="hero__subtitle">Not all heroes wear capes</p>
+        <h1>Sobre</h1>
+        <p>Locutorbubu é um ilustrador de horror e RPG, conhecido por suas criaturas grotescas e paisagens sombrias. 
+          Com um estilo gótico e Lovecraftiano, minhas obras convidam o espectador a explorar os cantos mais escuros da imaginação.
+          Nao perca tempo e solicite a sua arte agora!</p>
         <div>
           <button className="button button--secondary button-outline button--lg">Contratar agora</button>
         </div>
@@ -99,7 +112,7 @@ function CharacterArt() {
         <div className="row margin-top--md margin-bottom-md">
           <div className='col'>
             <Card className='margin-vert--md'>
-              <CardHeader style={{ backgroundColor: "#78135C" }} className='padding-vert--md'>
+              <CardHeader style={{ backgroundColor: "#78135C", color: "white" }} className='padding-vert--md'>
                 <Heading as="h4">Torso</Heading>
               </CardHeader>
               <CardImage style={{ padding: 0 }}
@@ -113,7 +126,7 @@ function CharacterArt() {
           </div>
           <div className='col'>
             <Card className="margin-vert--md">
-              <CardHeader style={{ backgroundColor: "#78135C" }} className='padding-vert--md'>
+              <CardHeader style={{ backgroundColor: "#78135C", color: "white" }} className='padding-vert--md'>
                 <Heading as="h4">Corpo todo</Heading>
               </CardHeader>
               <CardImage style={{ padding: 0 }}
@@ -127,13 +140,13 @@ function CharacterArt() {
           </div>
           <div className='col'>
             <Card className="margin-vert--md">
-              <CardHeader style={{ backgroundColor: "#78135C" }} className='padding-vert--md'>
+              <CardHeader style={{ backgroundColor: "#78135C", color: "white" }} className='padding-vert--md'>
                 <Heading as="h4">Promoções:</Heading>
               </CardHeader>
               <CardImage style={{ padding: 0 }}
                 cardImageUrl={require('@site/static/img/monsters.jpg').default}
               />
-              <CardBody style={{ backgroundColor: "#78135C" }} >
+              <CardBody style={{ backgroundColor: "#78135C", color: "white" }} >
                 <p>Party full colour (5-6 characters): <span class="badge badge--primary">R$ 549,90</span> </p>
                 <p>Party lineart (5-6 characters): <span class="badge badge--primary">R$ 399,90</span></p>
               </CardBody>
@@ -167,7 +180,7 @@ function RpgMonsterTokens() {
         <div className="row margin-top--md margin-bottom-md">
           <div className='col'>
             <Card className='margin-vert--md'>
-              <CardHeader style={{ backgroundColor: "#78135C" }} className='padding-vert--md'>
+              <CardHeader style={{ backgroundColor: "#78135C", color: "white" }} className='padding-vert--md'>
                 <Heading as="h4">Token completo</Heading>
               </CardHeader>
               <CardImage style={{ padding: 0 }}
@@ -177,7 +190,7 @@ function RpgMonsterTokens() {
                 <p>Simples: <span class="badge badge--secondary">R$ 49,90</span></p>
                 <p>Complicado: <span class="badge badge--secondary">R$ 79,90</span></p>
               </CardBody>
-              <CardFooter style={{ backgroundColor: "#78135C" }}>
+              <CardFooter style={{ backgroundColor: "#78135C", color: "white" }}>
                 <Heading as="h4">Promocao</Heading>
                 <p>3 tokens simples: <span class="badge badge--primary">R$ 119,90</span></p>
                 <p>3 tokens complicados: <span class="badge badge--primary">R$ 199,90</span></p>
@@ -186,7 +199,7 @@ function RpgMonsterTokens() {
           </div>
           <div className='col'>
             <Card className="margin-vert--md">
-              <CardHeader style={{ backgroundColor: "#78135C" }} className='padding-vert--md'>
+              <CardHeader style={{ backgroundColor: "#78135C", color: "white" }} className='padding-vert--md'>
                 <Heading as="h4">Lineart Token</Heading>
               </CardHeader>
               <CardImage style={{ padding: 0 }}
@@ -200,15 +213,15 @@ function RpgMonsterTokens() {
           </div>
           <div className='col'>
             <Card className="margin-vert--md">
-              <CardHeader style={{ backgroundColor: "#78135C" }} className='padding-vert--md'>
+              <CardHeader style={{ backgroundColor: "#78135C", color: "white" }} className='padding-vert--md'>
                 <Heading as="h4">Variacao de token</Heading>
               </CardHeader>
               <CardImage style={{ padding: 0 }}
                 cardImageUrl={require('@site/static/img/token-simples.jpg').default}
               />
               <CardBody>
-                <p>Simples: <span class="badge badge--secondary">R$ 89,90</span></p>
-                <p>Complicado: <span class="badge badge--secondary">R$ 159,90</span></p>
+                <p>Simples: <span class="badge badge--secondary">R$ 29,90</span></p>
+                <p>Complicado: <span class="badge badge--secondary">R$ 39,90</span></p>
               </CardBody>
             </Card>
           </div>
