@@ -35,9 +35,9 @@ function HomepageHeader() {
           </div>
           <div className='col col--12'>
           <div className='button-group button-group--block'>
-          <button class="button  button--outline button--secondary">Bluesky</button>
-          <button class="button  button--outline button--secondary">Instagram</button>
-          <button class="button  button--outline button--secondary">Email</button>
+          <button onClick={() => location.href = "https://locutorbubu.bsky.social"} class="button  button--outline button--secondary">Bluesky</button>
+          <button onClick={() => location.href = "https://www.instagram.com/bubugaraio"} class="button  button--outline button--secondary">Instagram</button>
+          <button onClick={() => location.href = "mailto:"} class="button  button--outline button--secondary">Email</button>
           </div>
           </div>
           </div>
@@ -83,7 +83,7 @@ function AboutMe() {
           Com um estilo gótico e Lovecraftiano, minhas obras convidam o espectador a explorar os cantos mais escuros da imaginação.
           Nao perca tempo e solicite a sua arte agora!</p>
         <div>
-          <button className="button button--secondary button-outline button--lg">Contratar agora</button>
+          <button onClick={() => location.href = "https://locutorbubu.bsky.social"}  className="button button--secondary button-outline button--lg">Contratar agora</button>
         </div>
       </div>
     </div>
@@ -95,18 +95,19 @@ function CharacterArt() {
   return (
     <section>
       <div className="container">
-        <div className="row margin--lg">
-          <div className={clsx('col col--2')}>
-            <div className="text--center">
-              <img src={require('@site/static/img/halloween.png').default} />
+          <div class="avatar margin-top--lg">
+            <div
+              class="avatar__photo-link avatar__photo avatar__photo--lg">
+              <img
+                alt="monsters photo"
+                src={require('@site/static/img/av-monsters.jpg').default} />
             </div>
-          </div>
-          <div className={clsx('col col--10')}>
-            <div className="padding-horiz--md">
-              <Heading as="h3">Arte de Character</Heading>
-              <p>Description Text</p>
+            <div class="avatar__intro">
+              <div class="avatar__name">Imagem de Personagens</div>
+              <small class="avatar__subtitle">
+                Imagem de personagens de RPG, Torso ou corpo inteiro, preco varia de acordo com a complexidade
+              </small>
             </div>
-          </div>
         </div>
 
         <div className="row margin-top--md margin-bottom-md">
@@ -144,7 +145,7 @@ function CharacterArt() {
                 <Heading as="h4">Promoções:</Heading>
               </CardHeader>
               <CardImage style={{ padding: 0 }}
-                cardImageUrl={require('@site/static/img/monsters.jpg').default}
+                cardImageUrl={require('@site/static/img/party.jpg').default}
               />
               <CardBody style={{ backgroundColor: "#78135C", color: "white" }} >
                 <p>Party full colour (5-6 characters): <span class="badge badge--primary">R$ 549,90</span> </p>
@@ -163,18 +164,19 @@ function RpgMonsterTokens() {
   return (
     <section>
       <div className="container">
-        <div className="row margin--lg">
-          <div className={clsx('col col--2')}>
-            <div className="text--center">
-              <img src={require('@site/static/img/monster.png').default} />
+        <div class="avatar margin-top--lg">
+            <div
+              class="avatar__photo-link avatar__photo avatar__photo--lg">
+              <img
+                alt="monsters photo"
+                src={require('@site/static/img/av-monsters.jpg').default} />
             </div>
-          </div>
-          <div className={clsx('col col--10')}>
-            <div className="padding-horiz--md">
-              <Heading as="h3">Tokens de monstro RPG</Heading>
-              <p>Description Text</p>
+            <div class="avatar__intro">
+              <div class="avatar__name">Monstros de RPG</div>
+              <small class="avatar__subtitle">
+                Tokens de monstros de RPG de qualquer sistema, precos variam com a complexidade
+              </small>
             </div>
-          </div>
         </div>
 
         <div className="row margin-top--md margin-bottom-md">
