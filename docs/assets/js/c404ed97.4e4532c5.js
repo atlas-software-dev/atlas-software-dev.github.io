@@ -1,0 +1,1 @@
+"use strict";(self.webpackChunkatlas_software_website=self.webpackChunkatlas_software_website||[]).push([[1349],{2945:e=>{e.exports=JSON.parse('{"name":"docusaurus-plugin-content-blog","id":"default"}')}}]);
