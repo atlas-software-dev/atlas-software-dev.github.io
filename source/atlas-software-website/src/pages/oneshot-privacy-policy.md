@@ -1,10 +1,10 @@
 # Política de Privacidade
 
-**Última atualização:** [Data de hoje, ex: 24 de setembro de 2026]
+**Última atualização:** 24 de setembro de 2026
 
-A sua privacidade é importante para nós. Esta Política de Privacidade explica como o aplicativo **[Nome do seu Aplicativo]** ("nós", "nosso" ou "app") coleta, usa, compartilha e protege as suas informações quando você utiliza o nosso serviço.
+A sua privacidade é importante para nós. Esta Política de Privacidade explica como o aplicativo **OneShot** ("nós", "nosso" ou "app") coleta, usa, compartilha e protege as suas informações quando você utiliza o nosso serviço.
 
-Ao utilizar o **[Nome do seu Aplicativo]**, você concorda com a coleta e o uso de informações de acordo com esta política.
+Ao utilizar o **OneShot**, você concorda com a coleta e o uso de informações de acordo com esta política.
 
 ## 1. Coleta de Informações
 
@@ -12,7 +12,7 @@ O nosso aplicativo foi desenvolvido para ser o mais focado possível na sua priv
 
 ### 1.1. Informações Fornecidas por Você
 Não coletamos nenhum dado pessoal seu automaticamente, a menos que você os forneça voluntariamente. As únicas informações que processamos de forma direta são aquelas que você insere ativamente no aplicativo, o que pode incluir:
-*   **Dados de Cadastro:** Informações preenchidas nos campos de registro (caso aplicável).
+<!-- *   **Dados de Cadastro:** Informações preenchidas nos campos de registro (caso aplicável). -->
 *   **Fichas de Personagem:** Textos, atributos, histórias e quaisquer outros dados referentes aos seus personagens de RPG criados dentro do aplicativo.
 
 ### 1.2. Dados Coletados por Terceiros (Bibliotecas e SDKs)
@@ -30,7 +30,7 @@ As informações de cadastro fornecidas são utilizadas exclusivamente para perm
 
 ## 3. Isenção de Responsabilidade sobre o Conteúdo
 
-O **[Nome do seu Aplicativo]** é uma ferramenta para auxiliar na criação e gestão de fichas de RPG. 
+O **OneShot** é uma ferramenta para auxiliar na criação e gestão de fichas de RPG. 
 *   **Conteúdo do Usuário:** O aplicativo não monitora, modera ou se responsabiliza por quaisquer textos, imagens, nomes ou informações inseridas por você nos campos de texto das fichas de personagem.
 *   **Compartilhamento:** Caso o aplicativo possua recursos que permitam exportar, enviar ou compartilhar a sua ficha com outras pessoas ou em outras plataformas, você é o único responsável pelo conteúdo compartilhado e pelas consequências dessa exposição.
 
